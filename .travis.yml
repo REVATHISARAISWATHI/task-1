@@ -7,4 +7,4 @@ deploy:
       secret_access_key: $AWS_KEY
       bucket: 'mytravis-testing'
       skip_cleanup: true
- Script: mvn clean verify sonar:sonar
+ 
