@@ -7,8 +7,4 @@ deploy:
       secret_access_key: $AWS_KEY
       bucket: 'mytravis-testing'
       skip_cleanup: true
-      
-mvn sonar:sonar \
-  -Dsonar.projectKey=codekillers123 \
-  -Dsonar.host.url=http://18.224.155.110:9000 \
-  -Dsonar.login=e50140d97a307d44c0b1e9ab2b4de64d299af2d7
+  mvn clean verify sonar:sonar
